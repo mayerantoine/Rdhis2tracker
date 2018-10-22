@@ -5,6 +5,9 @@
 ## timeout 504
 
 #query("api/trackedEntityInstances?ouMode=ALL&program=ybHHvBdo1ke&links=false&paging=false")
+
+#' @title Retrieve entities data for a specific program
+#' @export
 get_program_tracked_entities_data <- function(program_name = NULL,
                                               program_id = NULL,
                                               ou = NULL)
@@ -57,6 +60,10 @@ get_program_tracked_entities_data <- function(program_name = NULL,
 }
 
 #query("/api/events?fields=storedBy,dataValues,trackedEntityInstance,status,orgUnitName,orgUnit,programStage&program=ybHHvBdo1ke&links=false&paging=false")
+
+
+#' @title Retrieve events data for a specific program
+#' @export
 get_program_events_data <- function(program_name = NULL,
                                     program_id = NULL,
                                     ou = NULL) {

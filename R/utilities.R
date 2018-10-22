@@ -1,4 +1,5 @@
 
+#' @title Execute a Call to the DHIS2 Web Api
 
 query <- function(url_params) {
   if (grepl(x = url_params, pattern = "http"))
@@ -21,6 +22,10 @@ query <- function(url_params) {
 
 }
 
+
+
+#' @title login into the DHIS2 instances
+#' @export
 loadSecret <- function(secrets=NA) {
   #Load from a file
   #

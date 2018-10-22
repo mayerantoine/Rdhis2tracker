@@ -1,4 +1,7 @@
 
+
+#' @title Retrieve the program id  of a program in a DHIS2 Tracker instance
+#' @export
 get_program_id <- function(program_name){
 
     if (is.null(program_name)) {
@@ -24,6 +27,8 @@ get_program_id <- function(program_name){
 }
 
 
+#' @title Retrieve all data elements in a DHIS2 Traker instance
+#' @export
 get_all_dataelements <- function() {
   dataElements <-
     query(
@@ -37,6 +42,8 @@ get_all_dataelements <- function() {
 
 }
 
+#' @title Retrieve all programs information
+#' @export
 get_all_programs <- function() {
 
   programs <- query("api/programs?fields=id,name&links=false&paging=false")
@@ -48,6 +55,8 @@ get_all_programs <- function() {
 }
 
 
+#' @title Retrieve all programs attributes
+#' @export
 get_program_attributes <-
   function(program_name= NULL, program_id = NULL) {
 
@@ -70,6 +79,8 @@ get_program_attributes <-
   }
 
 
+#' @title Retrieve the program stages of a specific program
+#' @export
 get_program_programstages <-
   function(program_name= NULL, program_id = NULL) {
 
@@ -90,6 +101,9 @@ get_program_programstages <-
   }
 
 
+
+#' @title Retrieve all data elements of a specific program
+#' @export
 get_program_data_elements <- function(
             program_name = NULL,
             program_id = NULL)
@@ -142,7 +156,8 @@ get_program_data_elements <- function(
 
 
 
-
+#' @title Retrieve all variaables of a specific program
+#' @export
 get_program_variables <- function(program_name = NULL, program_id = NULL){
 
     if (is.null(program_id) && is.null(program_name)) {
@@ -159,7 +174,10 @@ get_program_variables <- function(program_name = NULL, program_id = NULL){
 
 }
 
+
 #query("api/programs/ybHHvBdo1ke.xml?fields=id,name,organisationUnits[id,name]")
+#' @title Retrieve all orgs units of a specific program
+#' @export
 get_program_orgunits <- function(program_name = NULL, program_id = NULL){
 
     if (is.null(program_id) && is.null(program_name)) {
