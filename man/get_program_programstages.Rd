@@ -2,10 +2,12 @@
 % Please edit documentation in R/metadata.R
 \name{get_program_programstages}
 \alias{get_program_programstages}
-\title{Retrieve the program stages of a specific program}
+\title{Retrieve the program stages of a specific program
+#' @export}
 \usage{
 get_program_programstages(program_name = NULL, program_id = NULL)
 }
 \description{
 Retrieve the program stages of a specific program
+#' @export
 }

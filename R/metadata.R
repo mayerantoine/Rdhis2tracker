@@ -80,7 +80,7 @@ get_program_attributes <-
 
 
 #' @title Retrieve the program stages of a specific program
-#' @export
+#' #' @export
 get_program_programstages <-
   function(program_name= NULL, program_id = NULL) {
 
@@ -173,7 +173,6 @@ get_program_variables <- function(program_name = NULL, program_id = NULL){
   return(bind_rows(data_elements))
 
 }
-
 
 #query("api/programs/ybHHvBdo1ke.xml?fields=id,name,organisationUnits[id,name]")
 #' @title Retrieve all orgs units of a specific program
