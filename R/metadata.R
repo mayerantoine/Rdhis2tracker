@@ -1,6 +1,7 @@
 
 
 #' @title Retrieve the program id  of a program in a DHIS2 Tracker instance
+#' @param program_name program name of which to retreive the uid
 #' @export
 get_program_id <- function(program_name){
 
@@ -56,6 +57,8 @@ get_all_programs <- function() {
 
 
 #' @title Retrieve all programs attributes
+#' @param program_name name of the program to retreive the attributes
+#' @param program_id  uid of the program to retreive the attributes
 #' @export
 get_program_attributes <-
   function(program_name= NULL, program_id = NULL) {
@@ -80,6 +83,8 @@ get_program_attributes <-
 
 
 #' @title Retrieve the program stages of a specific program
+#' @param program_name name of the program to retreive the stages
+#' @param program_id  uid of the program to retreive the stages
 #' #' @export
 get_program_programstages <-
   function(program_name= NULL, program_id = NULL) {
@@ -103,6 +108,8 @@ get_program_programstages <-
 
 
 #' @title Retrieve all data elements of a specific program
+#' @param program_name name of the program to retreive the data eleements
+#' @param program_id  uid of the program to retreive the  data elements
 #' @export
 get_program_data_elements <- function(
             program_name = NULL,
@@ -156,7 +163,9 @@ get_program_data_elements <- function(
 
 
 
-#' @title Retrieve all variaables of a specific program
+#' @title Retrieve all variables of a specific program
+#' @param program_name name of the program to retreive the variables
+#' @param program_id  uid of the program to retreive the variables
 #' @export
 get_program_variables <- function(program_name = NULL, program_id = NULL){
 
@@ -176,6 +185,8 @@ get_program_variables <- function(program_name = NULL, program_id = NULL){
 
 #query("api/programs/ybHHvBdo1ke.xml?fields=id,name,organisationUnits[id,name]")
 #' @title Retrieve all orgs units of a specific program
+#' @param program_name name of the program to retreive the org units
+#' @param program_id  uid of the program to retreive the org units
 #' @export
 get_program_orgunits <- function(program_name = NULL, program_id = NULL){
 

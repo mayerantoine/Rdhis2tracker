@@ -2,7 +2,7 @@
 An R Client for DHIS2 Tracker Web API
 
 __Author:__ Mayer Antoine <br/>
-__Status:__ in developement
+__Status:__ in development
 
 
 ### Description
@@ -20,7 +20,7 @@ Tracker Web API consists of 3 endpoints that have full CRUD (create, read, updat
 
 To get the development version :  <br/>
 
-```{r}
+```
   library(devtools)
   install_github("mayerantoine/rdhis2tracker")
 ```

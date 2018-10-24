@@ -7,6 +7,10 @@
 #query("api/trackedEntityInstances?ouMode=ALL&program=ybHHvBdo1ke&links=false&paging=false")
 
 #' @title Retrieve entities data for a specific program
+#'
+#' @param program_name program name to retreive the data
+#' @param program_id  uid of the program to retreive the data
+#' @param ou  organisation unit uid of which you want to retreive the data
 #' @export
 get_program_tracked_entities_data <- function(program_name = NULL,
                                               program_id = NULL,
@@ -63,6 +67,9 @@ get_program_tracked_entities_data <- function(program_name = NULL,
 
 
 #' @title Retrieve events data for a specific program
+#' @param program_name program name to retreive the data
+#' @param program_id  uid of the program to retreive the data
+#' @param ou  organisation unit uid of which you want to retreive the data
 #' @export
 get_program_events_data <- function(program_name = NULL,
                                     program_id = NULL,
