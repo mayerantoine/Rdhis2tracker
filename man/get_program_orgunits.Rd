@@ -6,6 +6,11 @@
 \usage{
 get_program_orgunits(program_name = NULL, program_id = NULL)
 }
+\arguments{
+\item{program_name}{name of the program to retreive the org units}
+
+\item{program_id}{uid of the program to retreive the org units}
+}
 \description{
 Retrieve all orgs units of a specific program
 }

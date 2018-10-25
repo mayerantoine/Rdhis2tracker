@@ -6,6 +6,9 @@
 \usage{
 get_program_id(program_name)
 }
+\arguments{
+\item{program_name}{program name of which to retreive the uid}
+}
 \description{
 Retrieve the program id  of a program in a DHIS2 Tracker instance
 }

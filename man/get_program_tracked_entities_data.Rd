@@ -7,6 +7,13 @@
 get_program_tracked_entities_data(program_name = NULL,
   program_id = NULL, ou = NULL)
 }
+\arguments{
+\item{program_name}{program name to retreive the data}
+
+\item{program_id}{uid of the program to retreive the data}
+
+\item{ou}{organisation unit uid of which you want to retreive the data}
+}
 \description{
 Retrieve entities data for a specific program
 }

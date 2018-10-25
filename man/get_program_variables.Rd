@@ -2,10 +2,15 @@
 % Please edit documentation in R/metadata.R
 \name{get_program_variables}
 \alias{get_program_variables}
-\title{Retrieve all variaables of a specific program}
+\title{Retrieve all variables of a specific program}
 \usage{
 get_program_variables(program_name = NULL, program_id = NULL)
 }
+\arguments{
+\item{program_name}{name of the program to retreive the variables}
+
+\item{program_id}{uid of the program to retreive the variables}
+}
 \description{
-Retrieve all variaables of a specific program
+Retrieve all variables of a specific program
 }

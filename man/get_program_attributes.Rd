@@ -6,6 +6,11 @@
 \usage{
 get_program_attributes(program_name = NULL, program_id = NULL)
 }
+\arguments{
+\item{program_name}{name of the program to retreive the attributes}
+
+\item{program_id}{uid of the program to retreive the attributes}
+}
 \description{
 Retrieve all programs attributes
 }

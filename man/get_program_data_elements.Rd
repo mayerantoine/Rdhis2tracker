@@ -6,6 +6,11 @@
 \usage{
 get_program_data_elements(program_name = NULL, program_id = NULL)
 }
+\arguments{
+\item{program_name}{name of the program to retreive the data eleements}
+
+\item{program_id}{uid of the program to retreive the  data elements}
+}
 \description{
 Retrieve all data elements of a specific program
 }

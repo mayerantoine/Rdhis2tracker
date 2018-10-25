@@ -2,7 +2,7 @@ Package: rdhis2tracker
 Type: Package
 Title: Api client for DHIS2 Web Api - Tracker Capture 
 Version: 0.1.0
-Author@R:  c( person("Mayer","Antoine", email ="mayerantoine@gmail.com", role=c("aut","cre")))
+Author: Mayer Antoine
 Maintainer: Mayer Antoine <mayerantoine@gmail.com>
 Description: Api client for DHIS2  Web Api - Tracker Capture
 License: file LICENSE
