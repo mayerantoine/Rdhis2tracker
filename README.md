@@ -1,3 +1,5 @@
+[![Travis-CI Build Status](https://travis-ci.org/mayerantoine/Rdhis2tracker.svg?branch=master)](https://travis-ci.org/mayerantoine/Rdhis2tracker)
+
 # Rdhis2tracker
 An R Client for DHIS2 Tracker Web API
 
